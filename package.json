@@ -1,0 +1,32 @@
+{
+  "name": "kabarangay-api",
+  "version": "1.0.0",
+  "description": "A supplementary API for our KaBarangay Android app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js", 
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeelyMart/KaBarangay-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeelyMart/KaBarangay-API/issues"
+  },
+  "homepage": "https://github.com/PeelyMart/KaBarangay-API#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.0"
+  }
+}
