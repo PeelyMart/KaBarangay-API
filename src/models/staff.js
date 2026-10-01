@@ -1,15 +1,13 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose" 
 
-
-const userSchema = new mongoose.Schema({
-  isActive: {
+const userSchema = new mongoose.Schema({ 
+ isActive: {
     type: Boolean, 
     default: true,
   }, 
 
-  isVerified: {
-    type: Boolean,
-    default: false,
+  position: {
+    type: String,
   },
 
   firstName: {
@@ -27,17 +25,14 @@ const userSchema = new mongoose.Schema({
     required: true,
   }, 
 
-  email: {
+   email: {
     type: String, 
     required: true,
   },
 
-  idPath: {
-    type: String,
-  },
+}); 
 
-  }); 
+const Staff = mongoose.model("Staff", userSchema); 
 
-const Citizen = mongoose.model("Citizen", userSchema);
+export default Staff;
 
-export default Citizen;
