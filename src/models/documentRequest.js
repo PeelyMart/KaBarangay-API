@@ -1,4 +1,4 @@
-import mongoose from "mongoose"; 
+import mongoose from "mongoose" 
 
 
 
@@ -37,6 +37,6 @@ const requestSchema = new mongoose.Schema({
 
 }); 
 
-const docRequest = mongoose.model("docRequest", requestSchema);
+const DocRequest = mongoose.model("DocRequest", requestSchema);
 
-export default docRequest;
+export default DocRequest;
